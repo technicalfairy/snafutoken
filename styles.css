@@ -40,7 +40,6 @@ body {
     color: white;
     z-index: 3;
     cursor: pointer;
-    filter: blur(0.025vw) url(#ink);
     text-decoration: none;
 }
 
@@ -55,7 +54,6 @@ body {
     font-family: 'ltc-flash', sans-serif;
     letter-spacing: 0.1em;
     margin-top: 2vh;
-    filter: blur(0.025vw) url(#ink);
 }
 
 .history-title {
@@ -63,7 +61,6 @@ body {
     text-align: center;
     margin: 10px 0;
     letter-spacing: 0.1em;
-    filter: blur(0.025vw) url(#ink);
 }
 
 .gothic-font {
@@ -79,7 +76,6 @@ body {
     font-weight: 400;
     margin-top: 10px;
     margin-bottom: 1%;
-    filter: blur(0.025vw) url(#ink);
 }
 
 .links-main-title {
@@ -89,7 +85,6 @@ body {
     font-family: 'futura-pt', sans-serif;
     font-weight: 600;
     letter-spacing: 0.1em;
-    filter: blur(0.025vw) url(#ink);
 }
 
 .snafu-image {
@@ -102,7 +97,6 @@ body {
     margin-top: 10px;
     text-align: center;
     font-family: 'futura-pt', sans-serif;
-    filter: blur(0.025vw) url(#ink);
 }
 
 .follow-us {
