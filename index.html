@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - SNAFU Project</title>
+    <!-- Adobe Fonts Code Snippet -->
+    <link rel="stylesheet" href="https://use.typekit.net/twt0eyp.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="center-content">
+            <h1 class="history-title2 ink-bleed"><span class="flash-font">COMING SOON TO A BLOCKCHAIN NEAR YOU!</span></h1>
+            <h1 class="history-title ink-bleed"><span class="gothic-font smaller-story">$SNAFU</span></h1>
+            <p class="links-of2 ink-bleed">otherwise known as</p>
+            <h3 class="links-main-title ink-bleed">SITUATION NORMAL: ALL F_____ UP</h3>
+            <img src="censored_content/snafu_empty.png" alt="Private Snafu" class="snafu-image">
+            <div class="social-links">
+                <p class="follow-us">There is no token yet. Join us to be the first to know.</p>
+                <p class="links">
+                    <a href="https://x.com/snafutoken" target="_blank" class="social-link">X (Twitter)</a> |
+                    <a href="https://t.me/snafutoken" target="_blank" class="social-link">Telegram community group</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="censored_content/song.mp3" type="audio/mpeg">
+    </audio>
+    <a href="#" id="play-pause-button" class="play-button">
+        &#9658;
+    </a>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="ink">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01 0.01" numOctaves="5" result="warp"></feTurbulence>
+                <feDisplacementMap in="SourceGraphic" in2="warp" scale="2"></feDisplacementMap>
+            </filter>
+        </defs>
+    </svg>
+
+    <script>
+        const playPauseButton = document.getElementById('play-pause-button');
+        const backgroundMusic = document.getElementById('background-music');
+
+        playPauseButton.addEventListener('click', function() {
+            if (backgroundMusic.paused) {
+                backgroundMusic.play();
+                playPauseButton.innerHTML = '&#10074;&#10074;';
+            } else {
+                backgroundMusic.pause();
+                playPauseButton.innerHTML = '&#9658;';
+            }
+        });
+    </script>
+</body>
+</html>

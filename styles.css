@@ -1,0 +1,128 @@
+body {
+    font-family: 'futura-pt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('censored_content/background.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Ensure the container takes up the full height */
+    position: relative;
+    text-align: center;
+}
+
+.play-button {
+    position: absolute;
+    top: 1.75vh;
+    right: 1.2vw;
+    width: 5vw;
+    height: 5vw;
+    background-color: transparent;
+    border: none;
+    font-size: 3vw;
+    color: white;
+    z-index: 3;
+    cursor: pointer;
+    filter: blur(0.5px) url(#ink);
+    text-decoration: none;
+}
+
+.center-content {
+    z-index: 2;
+}
+
+.history-title2 {
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0px 0;
+    font-family: 'ltc-flash', sans-serif;
+    letter-spacing: 0.1em;
+    margin-top: 2vh;
+    filter: blur(0.5px) url(#ink);
+}
+
+.history-title {
+    font-size: 3vw;
+    text-align: center;
+    margin: 10px 0;
+    letter-spacing: 0.1em;
+    filter: blur(0.5px) url(#ink);
+}
+
+.gothic-font {
+    font-family: 'franklin-gothic-atf', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.links-of2 {
+    font-size: 1.5vw;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 1%;
+    filter: blur(0.5px) url(#ink);
+}
+
+.links-main-title {
+    font-size: 3vw;
+    text-align: center;
+    margin: 0px 0;
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    filter: blur(0.5px) url(#ink);
+}
+
+.snafu-image {
+    width: 30%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.social-links {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'futura-pt', sans-serif;
+    filter: blur(0.5px) url(#ink);
+}
+
+.follow-us {
+    font-size: 1.75vw;
+    margin: 0;
+    color: white;
+}
+
+.links {
+    font-size: 2vw;
+    margin: 10px 0;
+    color: white;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
