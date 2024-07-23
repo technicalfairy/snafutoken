@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh; /* Ensure the container takes up the full height */
+    min-height: 100vh; /* Ensure the container takes up at least the full height */
     position: relative;
     text-align: center;
 }
@@ -45,6 +45,7 @@ body {
 
 .center-content {
     z-index: 2;
+    padding-bottom: 20px; /* Add padding to avoid blank space */
 }
 
 .history-title2 {
@@ -94,19 +95,19 @@ body {
 }
 
 .social-links {
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
     font-family: 'futura-pt', sans-serif;
 }
 
 .follow-us {
-    font-size: 1.75vw;
+    font-size: 1.5vw;
     margin: 0;
     color: white;
 }
 
 .links {
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin: 10px 0;
     color: white;
 }
@@ -119,4 +120,59 @@ body {
 
 .social-link:hover {
     text-decoration: underline;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .history-title2 {
+        font-size: 3vw;
+        margin-top: 20px;
+    }
+
+    .history-title {
+        font-size: 5vw;
+        margin-top: 2vw;
+    }
+
+    .links-of2 {
+        font-size: 4vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .links-main-title {
+        font-size: 4.5vw;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .snafu-image {
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .social-links {
+        margin-top: 20px;
+    }
+
+    .follow-us {
+        font-size: 4vw;
+        margin-bottom: -10px;
+    }
+
+    .links {
+        font-size: 4vw;
+        margin: 5vw 0;
+    }
+
+    .social-link {
+        font-size: 4vw;
+        margin: 0 0vw;
+    }
+
+    .play-button {
+        margin-top: -4px;
+        font-size: 4vw;
+        right: 10px; /* Adjust the right position to bring it closer to the corner */
+    }
 }
